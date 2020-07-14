@@ -1,0 +1,7 @@
+version: '3'
+services:
+  postgres:
+    build: .
+    env_file: .pgenv
+    ports:
+      - "5432:5432"
