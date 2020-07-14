@@ -1,0 +1,7 @@
+docker-compose up --build -d
+; docker-compose exec -u root jenkins chown root:docker /var/run/docker.sock
+
+Administratorパスワードの確認
+docker-compose logs -f jenkins
+
+docker-compose downで終了
