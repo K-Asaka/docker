@@ -1,0 +1,7 @@
+version: '3'
+services:
+  mssql:
+    build: .
+    env_file: .mssqlenv
+    ports:
+      - '1433:1433'
