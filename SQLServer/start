@@ -1,0 +1,6 @@
+コンテナ内から接続する場合
+docker-compose exec mssql bash
+/opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "Password"
+
+コンテナ外から接続する場合
+sqlcmd -S IPアドレス,1433 -U SA -P "Password"
