@@ -1,0 +1,8 @@
+Administratorパスワードの確認
+docker-compose logs -f mysql
+
+コンテナに接続
+docker-compose exec -u root mysql mysql -u root -p
+
+MySQL：パスワード変更
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'password';

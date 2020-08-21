@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+    mysql:
+        build: .
+        env_file: .myenv
+        volumes:
+          - ./mysql_home/data:/var/lib/mysql
+        ports:
+          - "3306:3306"
